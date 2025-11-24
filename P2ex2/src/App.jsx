@@ -19,7 +19,6 @@ function App() {
       <Background />
       <Snowstorm />
       <Header />
-      <audio src={backgroundAudio} autoPlay loop style={{ display: "none" }} />
 
       <section id="home" className="flex flex-col justify-end items-center h-screen text-center relative z-20">
         <img
@@ -93,6 +92,13 @@ function App() {
           ))}
         </div>
       </section>
+
+      {/* Próximamente */}
+      <section>
+        <h1 className="relative z-20 text-center mb-6">PRÓXIMAMENTE</h1>
+
+      </section>
+
       {/* Footer */}
       <Footer />
     </div>
