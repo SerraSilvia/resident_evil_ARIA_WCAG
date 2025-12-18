@@ -19,7 +19,7 @@ h1 {
   font-size: 75px;
   text-shadow: 2px 2px 4px #000000;
   /*padding: top right bottom left;*/
-  padding: 70px 0 70px 50px;
+  padding: 70px 0 70px 5vw; /* padding-left = 5% del ancho de la pantalla */
 }
 h3{
   font-family: "ResidentEvil7", 'Roboto', sans-serif;
@@ -87,5 +87,24 @@ header nav a:hover {
   .scrollbar-thin-gray-60::-webkit-scrollbar-thumb {
     background-color: rgba(156,163,175,0.6);
     border-radius: 9999px;
+  }
+}
+
+/* Mobile */
+.section {
+  margin: 1rem;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .section {
+    margin: 3rem;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .section {
+    margin: 6rem;
   }
 }

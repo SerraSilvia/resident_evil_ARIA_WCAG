@@ -4,7 +4,6 @@ import portada from "./assets/portada.png";
 import Header from "./components/Header.jsx";
 import Background from "./components/Background.jsx";
 import Snowstorm from "./components/Snowstorm.jsx";
-import backgroundAudio from "./backgroundAudio.mp3";
 import gamesData from "./data/games.json";
 import VideoGame from "./components/Videogames/Videogame.jsx";
 import booksData from "./data/books.json";
@@ -12,6 +11,7 @@ import Book from "./components/Reading/Book.jsx";
 import Movie from "./components/Movies/Movie.jsx";
 import moviesData from "./data/movies.json";
 import Footer from "./components/Footer.jsx";
+import Incoming from "./components/Incoming/Incoming.jsx";
 
 function App() {
   return (
@@ -20,21 +20,28 @@ function App() {
       <Snowstorm />
       <Header />
 
-      <section id="home" className="flex flex-col justify-end items-center h-screen text-center relative z-20">
+      {/* Home */}
+      <section
+        id="home"
+        className="flex flex-col justify-end items-center h-screen text-center relative z-20 px-4"
+      >
         <img
           src={portada}
           alt="Portada"
-          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-2/3 max-w-lg rounded-lg shadow-lg animate-fade-in"
+          className="absolute bottom-10 left-1/2 transform -translate-x-1/2 w-11/12 sm:w-2/3 md:w-1/2 max-w-lg rounded-lg shadow-lg animate-fade-in"
         />
       </section>
 
       {/* Videojuegos */}
+      <section
+        id="videojuegos"
+        className="relative z-20 overflow-x-auto py-6 px-4 sm:px-6 md:px-12"
+      >
+        <h1 className="text-6xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-center">
+          VIDEOJUEGOS
+        </h1>
 
-      <section id="videojuegos" className="relative z-20 overflow-x-auto py-6 mx-12">
-        <h1>VIDEOJUEGOS</h1>
-
-        {/* Contenedor scroll horizontal */}
-        <div className="relative flex space-x-8 pb-16 max-w-[95%] mx-auto">
+        <div className="relative flex space-x-4 sm:space-x-6 md:space-x-8 pb-16 max-w-full">
           {/* Línea horizontal de fondo */}
           <div
             className="absolute top-60 left-0 h-0.5 bg-gray-400"
@@ -52,11 +59,13 @@ function App() {
           ))}
         </div>
       </section>
-      {/* Libros */}
 
+      {/* Libros */}
       <section id="lectura" className="p-6 relative z-20">
-        <h1>LIBROS</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <h1 className="text-6xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-center">
+          LIBROS
+        </h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
           {booksData.books.map((book, index) => (
             <Book
               key={index}
@@ -69,12 +78,15 @@ function App() {
       </section>
 
       {/* Películas */}
+      <section
+        id="filmografia"
+        className="relative z-20 overflow-x-auto py-6 px-4 sm:px-6 md:px-12"
+      >
+        <h1 className="text-6xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-center">
+          PELÍCULAS
+        </h1>
 
-      <section id="filmografia" className="relative z-20 overflow-x-auto py-6 mx-12">
-        <h1>PELICULAS</h1>
-
-        {/* Contenedor scroll horizontal */}
-        <div className="relative flex space-x-8 pb-16 max-w-[95%] mx-auto">
+        <div className="relative flex space-x-4 sm:space-x-6 md:space-x-8 pb-16 max-w-full">
           {/* Línea horizontal de fondo */}
           <div
             className="absolute top-60 left-0 h-0.5 bg-gray-400"
@@ -94,9 +106,14 @@ function App() {
       </section>
 
       {/* Próximamente */}
-      <section id="proxim">
-        <h1 className="relative z-20 overflow-x-auto py-6 mx-12">PRÓXIMAMENTE</h1>
-
+      <section
+        id="proxim"
+        className="relative z-30 py-6 px-4 sm:px-6 md:px-12"
+      >
+        <h1 className="text-6xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-center">
+          PRÓXIMAMENTE
+        </h1>
+        <Incoming />
       </section>
 
       {/* Footer */}
