@@ -94,8 +94,8 @@ function App() {
       </section>
 
       {/* Próximamente */}
-      <section>
-        <h1 className="relative z-20 text-center mb-6">PRÓXIMAMENTE</h1>
+      <section id="proxim">
+        <h1 className="relative z-20 overflow-x-auto py-6 mx-12">PRÓXIMAMENTE</h1>
 
       </section>
 
