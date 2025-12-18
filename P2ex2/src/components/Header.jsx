@@ -18,16 +18,8 @@ class Header extends React.Component {
     );
   };
 
-  toggleMenu = () => {
-    this.setState((prev) => ({ menuAbierto: !prev.menuAbierto }));
-  };
-
-  cerrarMenu = () => {
-    this.setState({ menuAbierto: false });
-  };
-
   render() {
-    const { activo, menuAbierto } = this.state;
+    const { activo } = this.state;
 
     return (
       <header className="fixed top-0 left-0 w-full z-50 bg-black/ backdrop-blur-md">

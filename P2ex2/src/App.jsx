@@ -37,7 +37,7 @@ function App() {
         id="videojuegos"
         className="relative z-20 overflow-x-auto py-6 px-4 sm:px-6 md:px-12"
       >
-        <h1 className="text-6xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-center">
+        <h1 className="mb-6 text-center text-6xl sm:text-5xl md:text-6xl lg:text-7xl">
           VIDEOJUEGOS
         </h1>
 
@@ -62,7 +62,7 @@ function App() {
 
       {/* Libros */}
       <section id="lectura" className="p-6 relative z-20">
-        <h1 className="text-6xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-center">
+       <h1 className="mb-6 text-center text-6xl sm:text-5xl md:text-6xl lg:text-7xl">
           LIBROS
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
@@ -82,7 +82,7 @@ function App() {
         id="filmografia"
         className="relative z-20 overflow-x-auto py-6 px-4 sm:px-6 md:px-12"
       >
-        <h1 className="text-6xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-center">
+        <h1 className="mb-6 text-center text-6xl sm:text-5xl md:text-6xl lg:text-7xl">
           PELÍCULAS
         </h1>
 
@@ -110,7 +110,7 @@ function App() {
         id="proxim"
         className="relative z-30 py-6 px-4 sm:px-6 md:px-12"
       >
-        <h1 className="text-6xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-center">
+        <h1 className="mb-6 text-center text-6xl sm:text-5xl md:text-6xl lg:text-7xl">
           PRÓXIMAMENTE
         </h1>
         <Incoming />
