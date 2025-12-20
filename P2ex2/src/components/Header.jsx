@@ -1,11 +1,9 @@
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 class Header extends React.Component {
   constructor(props) {
     super(props);
-
     this.audioRef = React.createRef();
-
     this.state = {
       activo: false, // controla el color del botón
     };
@@ -32,11 +30,12 @@ class Header extends React.Component {
               text-xs sm:text-sm
                     "
         >
-          <a href="#home">INICIO</a>
-          <a href="#videojuegos">VIDEOJUEGOS</a>
-          <a href="#lectura">LIBROS</a>
-          <a href="#filmografia">PELICULAS</a>
-          <a href="#incoming">PRÓXIMAMENTE</a>
+          {/* Usamos NavLink con rutas */}
+          <NavLink to="/">INICIO</NavLink>
+          <NavLink to="/videojuegos">VIDEOJUEGOS</NavLink>
+          <NavLink to="/lectura">LIBROS</NavLink>
+          <NavLink to="/filmografia">PELICULAS</NavLink>
+          <NavLink to="/proxim">PRÓXIMAMENTE</NavLink>
           {/* Audio oculto, solo para reproducir */}
           <a>
             <audio ref={this.audioRef} src="././src/assets/audio/sonido.mp3" />
