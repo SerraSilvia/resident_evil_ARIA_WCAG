@@ -34,17 +34,26 @@ class App extends Component {
             <Routes>
               {/* HOME */}
               <Route
-                path="/"
-                element={
-                  <section className="flex flex-col justify-end items-center h-[80vh] relative z-20 px-4">
-                    <img
-                      src={portada}
-                      alt="Portada"
-                      className="max-w-lg rounded-lg shadow-lg animate-fade-in"
-                    />
-                  </section>
-                }
-              />
+    path="/"
+    element={
+      <section className="flex flex-col justify-end items-center h-[80vh] relative z-20 px-4">
+        <img
+          src={portada}
+          alt="Portada"
+          className="
+            w-full          /* ancho completo en móviles */
+            max-w-xs        /* límite máximo pequeño en móviles */
+            sm:max-w-md     /* límite máximo en pantallas pequeñas */
+            md:max-w-lg     /* límite máximo en pantallas medianas */
+            lg:max-w-xl     /* límite máximo en pantallas grandes */
+            rounded-lg 
+            shadow-lg 
+            animate-fade-in
+          "
+        />
+      </section>
+    }
+  />
 
               {/* VIDEOJUEGOS */}
               <Route
