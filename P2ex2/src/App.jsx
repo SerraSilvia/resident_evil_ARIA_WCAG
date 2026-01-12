@@ -27,14 +27,12 @@ class App extends Component {
           <Background />
           <Snowstorm />
 
-          {/* El Header con tus NavLinks */}
+          {/* Header */}
           <Header />
 
           <main className="pt-20">
-            {" "}
-            {/* Espacio para el header fixed */}
             <Routes>
-              {/* RUTA HOME */}
+              {/* HOME */}
               <Route
                 path="/"
                 element={
@@ -48,7 +46,7 @@ class App extends Component {
                 }
               />
 
-              {/* RUTA VIDEOJUEGOS */}
+              {/* VIDEOJUEGOS */}
               <Route
                 path="/videojuegos"
                 element={
@@ -63,7 +61,7 @@ class App extends Component {
                 }
               />
 
-              {/* RUTA LECTURA */}
+              {/* LECTURA */}
               <Route
                 path="/lectura"
                 element={
@@ -78,7 +76,7 @@ class App extends Component {
                 }
               />
 
-              {/* RUTA FILMOGRAFIA */}
+              {/* FILMOGRAFÍA */}
               <Route
                 path="/filmografia"
                 element={
@@ -93,7 +91,7 @@ class App extends Component {
                 }
               />
 
-              {/* RUTA PRÓXIMAMENTE */}
+              {/* PRÓXIMAMENTE */}
               <Route
                 path="/proxim"
                 element={
@@ -104,7 +102,24 @@ class App extends Component {
                 }
               />
 
-              {/* REDIRECCIÓN SI LA RUTA NO EXISTE */}
+              {/* JUEGOS DE MESA */}
+              <Route
+                path="/boardgames"
+                element={
+                  <section className="relative z-20 overflow-x-auto py-6 px-4 md:px-12">
+                    <h1 className="mb-6 text-center text-6xl">
+                      🎲 Juegos de Mesa Resident Evil
+                    </h1>
+                    <div className="relative flex space-x-4 pb-16">
+                      {boardData.boardgames.map((game, index) => (
+                        <BoardGameRE key={index} {...game} />
+                      ))}
+                    </div>
+                  </section>
+                }
+              />
+
+              {/* 404 */}
               <Route
                 path="*"
                 element={
@@ -114,18 +129,6 @@ class App extends Component {
                 }
               />
             </Routes>
-              {/* Juegos de Mesa Resident Evil - siempre visibles */}
-            <section className="relative z-20 overflow-x-auto py-6 px-4 md:px-12">
-              <h1 className="mb-6 text-center text-6xl">
-                Juegos de Mesa Resident Evil
-              </h1>
-              <div className="relative flex space-x-4 pb-16">
-                {boardData.boardgames.map((game, index) => (
-                  <BoardGameRE key={index} {...game} />
-                ))}
-              </div>
-            </section>
-            
           </main>
 
           <Footer />
@@ -136,3 +139,4 @@ class App extends Component {
 }
 
 export default App;
+
