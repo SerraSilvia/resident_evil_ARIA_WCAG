@@ -108,7 +108,7 @@ class App extends Component {
                 element={
                   <section className="relative z-20 overflow-x-auto py-6 px-4 md:px-12">
                     <h1 className="mb-6 text-center text-6xl">
-                      🎲 Juegos de Mesa Resident Evil
+                      Juegos de Mesa Resident Evil
                     </h1>
                     <div className="relative flex space-x-4 pb-16">
                       {boardData.boardgames.map((game, index) => (

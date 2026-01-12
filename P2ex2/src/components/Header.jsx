@@ -6,8 +6,8 @@ class Header extends React.Component {
     super(props);
     this.audioRef = React.createRef();
     this.state = {
-      activo: false, // controla el color del botón de audio
-      menuAbierto: false, // controla el menú hamburguesa
+      activo: false,       // Estado del botón de audio
+      menuAbierto: false,  // Estado del menú hamburguesa
     };
   }
 
@@ -20,6 +20,10 @@ class Header extends React.Component {
 
   toggleMenu = () => {
     this.setState((prev) => ({ menuAbierto: !prev.menuAbierto }));
+  };
+
+  cerrarMenu = () => {
+    this.setState({ menuAbierto: false });
   };
 
   render() {
@@ -65,6 +69,7 @@ class Header extends React.Component {
                 key={index}
                 to={link.to}
                 tabIndex={0}
+                onClick={this.cerrarMenu} // Oculta menú al hacer clic en un enlace
                 className="text-white hover:text-red-500 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
               >
                 {link.label}
