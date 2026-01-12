@@ -1,0 +1,40 @@
+{
+  "boardgames": [
+    {
+      "title": "Resident Evil Nemesis: The Board Game",
+      "year": 2021,
+      "image": "public/img/boardgames/re-nemesis.jpg",
+      "synopsis": "Sobrevive al Nemesis y completa misiones antes de que sea demasiado tarde. Un juego cooperativo lleno de tensión y estrategia."
+    },
+    {
+      "title": "Resident Evil: Escape Room",
+      "year": 2020,
+      "image": "public/img/boardgames/re-escaperoom.jpg",
+      "synopsis": "Resuelve puzzles y escapa de instalaciones de Umbrella antes de que el brote se propague. Ideal para jugar en grupo y poner a prueba tu ingenio."
+    },
+    {
+      "title": "Resident Evil: The Board Game",
+      "year": 2019,
+      "image": "public/img/boardgames/re-boardgame1.jpg",
+      "synopsis": "Revive la experiencia de Raccoon City en este juego cooperativo. Lucha contra zombies y criaturas de Umbrella mientras cumples misiones estratégicas."
+    },
+    {
+      "title": "Resident Evil: Biohazard - The Board Game",
+      "year": 2016,
+      "image": "public/img/boardgames/re-biohazard.jpg",
+      "synopsis": "Explora la mansión de Umbrella, encuentra pistas, combate criaturas y sobrevive al horror en este juego cooperativo para fans de la saga."
+    },
+    {
+      "title": "Resident Evil: Deck Building Game",
+      "year": 2017,
+      "image": "public/img/boardgames/re-deckgame.jpg",
+      "synopsis": "Construye tu mazo y enfréntate a enemigos mortales. Gestiona recursos y habilidades de los personajes para sobrevivir al brote viral."
+    },
+    {
+      "title": "Resident Evil: Operation Raccoon City - Board Game",
+      "year": 2012,
+      "image": "public/img/boardgames/re-operation.jpg",
+      "synopsis": "Controla a los personajes del equipo U.S.S. en Raccoon City y completa misiones tácticas mientras te enfrentas a zombis y experimentos biológicos."
+    }
+  ]
+}
